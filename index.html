@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+</head>
+<body>
+    <header class="top-container">
+        <h1 class="main-heading">IP Address Tracker</h1>
+  
+        <form class="form" novalidate>
+          <input
+            type="text"
+            class="input"
+            placeholder="Search for any IP address or domain"
+            aria-label="Type IP address or Domain name"
+          />
+          <button
+            class="submit-btn"
+            type="submit"
+            aria-label="Hit Search"
+          ></button>
+        </form>
+  
+        <dl class="user-data-list">
+          <div class="user-data-item">
+            <dt class="data-term">IP Address</dt>
+            <dt  class="ip_address"></dt >
+          </div>
+  
+          <div class="user-data-item">
+            <dt class="data-term">Location</dt>
+            <dt class="location"></dt>
+          </div>
+  
+          <div class="user-data-item">
+            <dt class="data-term">Timezone</dt>
+            <dt  class="Time_zone"></dt >
+          </div>
+  
+          <div class="user-data-item">
+            <dt class="data-term">ISP</dt>
+            <dt  class="spaceX"></dt >
+          </div>
+        </dl>
+      </header>
+  
+      <div id="map">
+        <!-- <h1 class="loading-text">Loading...</h1> -->
+      </div>
+    </div>
+    <!-- Leaflet Map -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <!-- My scripts -->
+    <script src="main.js"></script>
+
+    
+
+
+
+
+</body>
+</html>
